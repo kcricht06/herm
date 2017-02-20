@@ -16,7 +16,14 @@ $(function() {
             var name = $("input#name").val();
             var phone = $("input#phone").val();
             var email = $("input#email").val();
-            var message = $("textarea#message").val();
+            var message = $("input#message").val();
+            var city = $("input#city").val();
+            var lot = $("input#lot").val();
+            var block = $("input#block").val();
+            var sect = $("input#sect").val();
+            var tax = $("input#tax").val();
+            var jobmessage = $("textarea#jobmessage").val();
+
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -29,7 +36,13 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message,
+                    city: city,
+                    lot: lot,
+                    block: block,
+                    sect: sect,
+                    tax: tax,
+                    jobmessage: jobmessage
                 },
                 cache: false,
                 success: function() {
