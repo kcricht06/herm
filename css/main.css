@@ -14,9 +14,15 @@ body {
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
+
+#footer{
+  text-align: center;
+}
+
 .req {
   color: red;
 }
+
 #img3{
   background-position: bottom;
 }
