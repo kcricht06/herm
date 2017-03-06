@@ -9,6 +9,16 @@ if(empty($_POST['name'])      ||
    echo "No arguments Provided!";
    return false;
    }
+ if(!$captcha){
+    echo '<h2>Please check the the captcha form.</h2>';
+      exit;
+    }
+    $secretKey = "6LfdTREUAAAAAERcFEYQ48rEV4wqBfvX8z4rcUYg";
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+    $responseKeys = json_decode($response,true);
+    if(intval($responseKeys["success"]) !== 1) {
+      echo '<h2>You are spammer ! Get the @$%K out</h2>';
 
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
