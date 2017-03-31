@@ -17,6 +17,7 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $site = strip_tags(htmlspecialchars($_POST['site']));
 $city = strip_tags(htmlspecialchars($_POST['city']));
+$county = strip_tags(htmlspecialchars($_POST['county']));
 $lot = strip_tags(htmlspecialchars($_POST['lot']));
 $block = strip_tags(htmlspecialchars($_POST['block']));
 $sect = strip_tags(htmlspecialchars($_POST['sect']));
