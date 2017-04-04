@@ -31,7 +31,14 @@ $(function() {
                     phone: phone,
                     bill: bill,
                     email: email,
-                    site: site
+                    site: site,
+                    city: city,
+                    county: county,
+                    lot: lot,
+                    block: block,
+                    sect: sect,
+                    tax: tax,
+                    jobmessage: jobmessage
                 },
                 cache: false,
                 success: function() {
